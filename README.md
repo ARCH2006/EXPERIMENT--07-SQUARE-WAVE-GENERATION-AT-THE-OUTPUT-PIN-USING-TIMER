@@ -1,11 +1,8 @@
 # EXPERIMENT--05-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
-
 ### Aim:
 To generate a PWM wave at the timer pin output and  simuate it on  proteus using an virtual oscilloscope  
-
 ### Components required:
 STM32 CUBE IDE, Proteus 8 simulator .
-
 ### Theory:
 
 The timer modules can operate a variety of modes one of which is the PWM mode. Where the timer gets clocked from an internal source and counts up to the auto-reload register value, then the output channel pin is driven HIGH. And it remains until the timer counts reach the CCRx register value, the match event causes the output channel pin to be driven LOW. And it remains until the timer counts up to the auto-reload register value, and so on.
@@ -41,9 +38,6 @@ STM32 PWM Duty Cycle
 
 In normal settings, assuming you’re using the timer module in PWM mode and generating PWM signal in edge-aligned mode up-counting configuration. The duty cycle percentage is controlled by changing the value of the CCRx register. And the duty cycle equals (CCRx/ARR) [%].
 ![image](https://github.com/vasanthkumarch/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/36288975/58ce0807-331e-49f7-bc8d-373f82592a92)
-
-
-
 ## Procedure:
 ```
 Step1: Open CubeMX & Create New Project
@@ -61,9 +55,6 @@ Step9. Create a new Proteus project and place STM32F40xx i.e. the same MCU for w
 Step10. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
 Step14. click on debug and simulate using simulation as shown below 
 ``` 
-
-  
-
 ## STM 32 CUBE PROGRAM :
 ```
 /*
@@ -179,19 +170,10 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif
 ```
-
-
-
-
-
 ## Output screen shots of proteus  :
-![Screenshot 2024-10-14 094342](https://github.com/user-attachments/assets/f47c6f61-e7ce-4034-8d7f-27807e4f23f1)
-
-
- 
+![Screenshot 2024-10-14 094342](https://github.com/user-attachments/assets/f47c6f61-e7ce-4034-8d7f-27807e4f23f1) 
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE):  
 ![Screenshot 2024-10-09 105320](https://github.com/user-attachments/assets/8b495f39-e7e3-425f-a19f-bfc8619a2542)
-
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 ```
 FOR PULSE AT 500
@@ -205,7 +187,6 @@ FREQUENCY = 1/(TOTAL TIME)=1/4=250Hz
 FOR PULSE AT 700
 ```
 ![Screenshot 2024-10-14 094325](https://github.com/user-attachments/assets/ab87cfab-bc47-44f7-ade3-69a88c360bbf)
-
 TON = 3ms
 TOFF=1ms
 TOTAL TIME = 4ms
@@ -214,13 +195,10 @@ FREQUENCY = 1/(TOTAL TIME)=1/4=250Hz
 FOR PULSE AT 900
 ```
 ![Screenshot 2024-10-14 094515](https://github.com/user-attachments/assets/d79012ba-168c-480f-a216-daf8a475d54c)
-
 TON = 3.5ms
 TOFF=0.5ms
 TOTAL TIME = 4ms
 FREQUENCY = 1/(TOTAL TIME)=1/4=250Hz
-
-
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
 
