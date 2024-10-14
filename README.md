@@ -66,6 +66,10 @@ Step14. click on debug and simulate using simulation as shown below
 
 ## STM 32 CUBE PROGRAM :
 ```
+/*
+NAME: ARCHANA S
+REG.NO: 212223040019
+*/
 #include "main.h"
 
 TIM_HandleTypeDef htim2;
@@ -181,33 +185,38 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output screen shots of proteus  :
- ![Screenshot 2024-10-09 105159](https://github.com/user-attachments/assets/bb478c5b-a034-406b-b039-1fa6af04748c)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE):  
 ![Screenshot 2024-10-09 105320](https://github.com/user-attachments/assets/8b495f39-e7e3-425f-a19f-bfc8619a2542)
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
+```
 FOR PULSE AT 500
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
+```
+ ![Screenshot 2024-10-09 105159](https://github.com/user-attachments/assets/bb478c5b-a034-406b-b039-1fa6af04748c)
+TON = 2ms
+TOFF=2ms
+TOTAL TIME = 4ms
+FREQUENCY = 1/(TOTAL TIME)=1/4=250Hz
+```
 FOR PULSE AT 700
+```
+![Screenshot 2024-10-14 094325](https://github.com/user-attachments/assets/ab87cfab-bc47-44f7-ade3-69a88c360bbf)
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
-
+TON = 3ms
+TOFF=1ms
+TOTAL TIME = 4ms
+FREQUENCY = 1/(TOTAL TIME)=1/4=250Hz
+```
 FOR PULSE AT 900
+```
+![Screenshot 2024-10-14 094515](https://github.com/user-attachments/assets/d79012ba-168c-480f-a216-daf8a475d54c)
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 3.5ms
+TOFF=0.5ms
+TOTAL TIME = 4ms
+FREQUENCY = 1/(TOTAL TIME)=1/4=250Hz
 
 
 ## Result :
